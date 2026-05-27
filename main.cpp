@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <windows.h>
+#include <fstream>
 using namespace std;
 
 int main()
@@ -12,6 +14,8 @@ int main()
     int qtdDisciplinas;
 
     // Processamento
+
+    // LEITURA DE ALUNOS (Commit 1)
     cout << "=== SISTEMA DE NOTAS v4.0 ===" << endl;
 
     do
@@ -44,7 +48,7 @@ int main()
             {
                 cout << "Disciplina " << j + 1 << " (1 a 5): ";
                 cin >> notas[i][j];
-            } while (notas[i][j] < 1 || notas[i][j] > 5);
+            } while (notas[i][j] < 0 || notas[i][j] > 10);
             soma += notas[i][j];
         }
         media[i] = soma / qtdDisciplinas;
@@ -80,7 +84,42 @@ int main()
         }
     }
 
-    cout << "\nResumo: " << aprovados << " aprovados, " << recuperacao << " em recuperacao, " << reprovado << " reprovados";
+    cout << "\n=== RESUMO DO SISTEMA ===" << endl;
+    cout << "Alunos Aprovados: " << aprovados << endl;
+    cout << "Alunos em Recuperacao: " << recuperacao << endl;
+    cout << "Alunos Reprovados: " << reprovado << endl;
+
+    // SALVAR EM ARQUIVO (Commit 4)
+    ofstream arquivo("Relatorio.txt");
+
+    if (arquivo.is_open())
+    {
+        arquivo << "=== RELATÓRIO ===" << endl;
+        for (int i = 0; i < qtdAlunos; i++)
+        {
+            arquivo << nomes[i] << " Média:" << media[i] << " - ";
+            if (media[i] >= 7)
+            {
+                arquivo << "Aprovado" << endl;
+            }
+            else if (media[i] >= 5)
+            {
+                arquivo << " Recuperação" << endl;
+            }
+            else
+            {
+                arquivo << " Reprovado" << endl;
+            }
+        }
+        arquivo << "\nResumo: " << aprovados << " aprovados, " << recuperacao << " Em recuperação, " << reprovado << " reprovados. " << endl;
+
+        arquivo.close();
+        cout << "\nRelatório salvo em relatorio.txt" << endl;
+    }
+    else
+    {
+        cout << "Erro ao criar arquivo." << endl;
+    }
 
     return 0;
 }
