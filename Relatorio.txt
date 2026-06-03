@@ -1,5 +1,8 @@
-=== RELATÓRIO ===
-isa Média:8.5 - Aprovado
-vini Média:8.5 - Aprovado
+Data do relatorio: Wed Jun 03 09:00:29 2026
 
-Resumo: 2 aprovados, 0 Em recuperação, 0 reprovados. 
+=== RELATÓRIO ===
+isa Média:9 - Aprovado
+vin Média:8.33333 - Aprovado
+miguel Média:8 - Aprovado
+
+Resumo: 3 aprovados, 0 Em recuperação, 0 reprovados. 
