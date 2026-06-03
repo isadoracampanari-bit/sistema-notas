@@ -20,6 +20,7 @@ int main()
     cout << "=== SISTEMA DE NOTAS v4.0 ===" << endl;
     cout << "1 - Novo relatório" << endl;
     cout << "2 - Ver relatório salvo" << endl;
+    cout << "3 - Sobre o sistema" << endl;
     cout << "Escolha uma opção: " << endl;
     cin >> opcaoInicial;
 
@@ -36,8 +37,14 @@ int main()
         } else {
             cout << "Nenhum relatório encontrado." << endl;
         }
+        return 0;
     }
-
+    if (opcaoInicial == 3) {
+    cout << " === SOBRE === " << endl;
+    cout << "Sistema de Notas v4.1" << endl;
+    cout << "Desenvolvido por: Isadora" << endl;
+    cout << "Turma: LOPAL 2026 - SENAI-SP" << endl;
+    }
     do
     {
         cout << "Quantidade de alunos (1 a 20): ";
