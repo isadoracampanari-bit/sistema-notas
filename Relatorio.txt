@@ -1,7 +1,5 @@
 === RELATÓRIO ===
-isa Média:8 - Aprovado
-vini Média:8.66667 - Aprovado
-miguel Média:7 - Aprovado
-ana Média:6.66667 -  Recuperação
+isa Média:8.5 - Aprovado
+vini Média:8.5 - Aprovado
 
-Resumo: 3 aprovados, 1 Em recuperação, 0 reprovados. 
+Resumo: 2 aprovados, 0 Em recuperação, 0 reprovados. 
