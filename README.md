@@ -10,18 +10,12 @@ Este é um programa desenvolvido em **C++** para console, projetado para gerenci
 
 ##  Funcionalidades
 
-- **Menu Inicial Interativo:** Permite escolher entre iniciar um novo relatório ou visualizar o último relatório gravado.
-- **Validação de Entradas:** Garante que dados inconsistentes não quebrem o sistema:
-  - Limite de 1 a 20 alunos.
-  - Limite de 1 a 5 disciplinas.
-  - Notas estritamente entre 0.0 e 10.0.
-- **Cálculo Automático de Médias:** Processamento preciso com base nas notas fornecidas.
-- **Classificação de Status:**
-  -  **Aprovado:** Média igual ou superior a 7.0
-  -  **Recuperação:** Média entre 5.0 e 6.9
-  -  **Reprovado:** Média abaixo de 5.0
-- **Resumo Geral:** Exibe no console a contagem total de alunos aprovados, em recuperação e reprovados.
-- **Persistência em Arquivo:** Salva automaticamente todos os dados processados e o resumo final em um arquivo externo chamado `Relatorio.txt`.
+- Cadastro de alunos e notas por disciplina
+- Cálculo de médias por aluno
+- Classificação: Aprovado, Recuperação ou Reprovado
+- Relatório salvo em arquivo .txt com data e hora
+- Leitura de relatório salvo
+- Menu "Sobre o sistema"
 
 ## Tecnologias Utilizadas
 
