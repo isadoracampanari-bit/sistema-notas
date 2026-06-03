@@ -15,8 +15,10 @@ int main()
     int opcaoInicial;
 
     // Processamento
-
     // LEITURA DE ALUNOS (Commit 1)
+    do
+
+    {
     cout << "=== SISTEMA DE NOTAS v4.0 ===" << endl;
     cout << "1 - Novo relatório" << endl;
     cout << "2 - Ver relatório salvo" << endl;
@@ -45,6 +47,12 @@ int main()
     cout << "Desenvolvido por: Isadora" << endl;
     cout << "Turma: LOPAL 2026 - SENAI-SP" << endl;
     }
+
+    
+    
+} while (opcaoInicial != 1);
+   
+    
     do
     {
         cout << "Quantidade de alunos (1 a 20): ";
